@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="MeKB-Sim: Personal Knowledge Base-Powered Multi-Agent Simulation">
+  <meta name="keywords" content="Multi-Agent Simulation, Personal Knowledge Base">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>MeKB-Sim: Personal Knowledge Base-Powered Multi-Agent Simulation</title>
 
   <meta name="description" content="MeKB-Sim: Personal Knowledge Base-Powered Multi-Agent Simulation">
   <meta name="keywords" content="Multi-Agent Simulation, Personal Knowledge Base">
@@ -86,8 +86,6 @@
         <div class="column has-text-centered">
           <h1 class="title is-1 publication-title">MeKB-Sim: Personal Knowledge Base-Powered Multi-Agent Simulation</h1>
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Zhenran Xu, Jifang Wang, Baotian Hu, Longyue Wang, Min Zhang</span>
-          <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://www.semanticscholar.org/author/Zhenran-Xu/2149238600">Zhenran Xu</a>,
             </span>
@@ -148,7 +146,7 @@
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
-                  <span>Data</span>
+                  <span>Game Interface</span>
                   </a>
               </span>
               <!-- Dataset Link. -->
@@ -156,11 +154,10 @@
                 <a href="https://github.com/google/nerfies/releases/tag/0.1"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
-                      <i class="far fa-images"></i>
+                      <i class="far fa-desktop"></i>
                   </span>
-                  <span>Data</span>
+                  <span>Monitoring Panel</span>
                   </a>
-               </span>
             </div>
 
           </div>
@@ -170,21 +167,7 @@
   </div>
 </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/teaser.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Nerfies</span> turns selfie videos from your phone into
-        free-viewpoint
-        portraits.
-      </h2>
-    </div>
-  </div>
-</section>
+
 
 
 <section class="section">
@@ -195,31 +178,13 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            We present the first method capable of photorealistically reconstructing a non-rigidly
-            deforming scene using photos/videos captured casually from mobile phones.
+            Language agents have demonstrated remarkable emergent social behaviors within simulated sandbox environments. However, the characterization of these agents has been constrained by static prompts that outline their profiles, highlighting a gap in achieving simulations that closely mimic real-life interactions. 
           </p>
           <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
+            To close this gap, we introduce MeKB-Sim, a multi-agent simulation platform based on a dynamic personal knowledge base, termed MeKB. Each agent's MeKB contains both fixed and variable attributes—such as linguistic style, personality, and memory—crucial for theory-of-mind modeling. These attributes are updated when necessary, in response to events that the agent experiences. Comparisons with human annotators show that the LLM-based attribute updates are reliable.
           </p>
           <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
+            Based on the dynamic nature of MeKB, experiments and case study show that MeKB-Sim enables agents to adapt their planned activities and interactions with other agents effectively. Our platform includes a Unity WebGL game interface for visualization and an interactive monitoring panel that presents the agents' planning, actions, and evolving MeKBs over time.
           </p>
         </div>
       </div>
@@ -243,17 +208,17 @@
 
 
 
-<section class="section" id="BibTeX">
+<!-- <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{park2021nerfies,
-  author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
+    <pre><code>@software{xu2024mekb,
+  author    = {Zhenran Xu},
   title     = {Nerfies: Deformable Neural Radiance Fields},
   journal   = {ICCV},
   year      = {2021},
 }</code></pre>
   </div>
-</section>
+</section> -->
 
 
 <footer class="footer">
