@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description"
     content="FilmAgent: Automating Virtual Film Production via Multi-Agent Collaboration">
-  <meta name="keywords" content="General-Purpose Agent, Human Computer Interaction">
+  <meta name="keywords" content="Film Agent, Large Language Model">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FilmAgent: Automating Virtual Film Production via Multi-Agent Collaboration</title>
   <script type="module" src="https://md-block.verou.me/md-block.js"></script>
@@ -34,7 +34,7 @@
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="static/images/favicon.png">
+  <link rel="icon" href="static/images/icon.png">
 
   <link rel="stylesheet" href="./stylesheets/layout.css">
   <link rel="stylesheet" href="./stylesheets/index.css">
@@ -49,73 +49,42 @@
 
 <body>
 
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/HITsz-TMG">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
       </a>
-    </div>
-    <div class="navbar-menu">
-      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-        <a class="navbar-item" href="https://www.xlang.ai/">
-          <span class="icon">
-            <i class="fas fa-home"></i>
-          </span>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
         </a>
-
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">
-            More Research
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://github.com/HITsz-TMG/Multi-agent-peer-review">
+            Multi-Agent Peer Review
           </a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://yale-lily.github.io/spider">
-              Spider
-            </a>
-            <a class="navbar-item" href="https://github.com/HKUNLP/UnifiedSKG">
-              UnifiedSKG
-            </a>
-            <a class="navbar-item" href="https://github.com/Yushi-Hu/IC-DST">
-              IC-DST
-            </a>
-            <a class="navbar-item" href="https://github.com/HKUNLP/icl-selective-annotation">
-              Selective Annotation
-            </a>
-            <a class="navbar-item" href="https://lm-code-binder.github.io/">
-              Binder
-            </a>
-            <a class="navbar-item" href="https://ds1000-code-gen.github.io/">
-              DS-1000
-            </a>
-            <a class="navbar-item" href="https://instructor-embedding.github.io/">
-              Instructor
-            </a>
-            <a class="navbar-item" href="https://text-to-reward.github.io/">
-              Text2Reward
-            </a>
-            <a class="navbar-item" href="https://github.com/xlang-ai/OpenAgents">
-              OpenAgents
-            </a>
-            <a class="navbar-item" href="https://github.com/OpenLemur/lemur">
-              Lemur-70B
-            </a>
-            <a class="navbar-item" href="https://arks-codegen.github.io/">
-              ARKS
-            </a>
-            <a class="navbar-item" href="https://brightbenchmark.github.io/">
-              BRIGHT
-            </a>
-            <a class="navbar-item" href="https://spider2-v.github.io/">
-              Spider2-V
-            </a>
-
-          </div>
+        </div>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://mekb-sim.github.io/">
+            MeKB-Sim
+          </a>
         </div>
       </div>
-
     </div>
-  </nav>
+
+  </div>
+</nav>
+
 
 
   <section class="hero">
@@ -132,9 +101,9 @@
               <span class="author-block">
                 <a href="https://openreview.net/profile?id=~Jifang_Wang1">Jifang Wang</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a href="https://chenjix.github.io/">Zhouyi Li</a><sup>2</sup>,</span>
+                Zhouyi Li<sup>2</sup>,</span>
               <span class="author-block">
-                <a href="https://xiaochuanli.com/">Senbao Shi</a><sup>1</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=BQwWrMAAAAAJ">Senbao Shi</a><sup>1</sup>,</span>
               <br>
               <span class="author-block">
                <a href="https://faculty.hitsz.edu.cn/hubaotian">Baotian Hu</a><sup>1</sup>,</span>
@@ -153,7 +122,7 @@
             <div class="column has-text-centered">
               <div class="publication-links">
                 <span class="link-block">
-                  <a href="https://arxiv.org/abs/2404.07972" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://filmagent.github.io/static/FilmAgent_arxiv_version_0830_v1.pdf" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="ai ai-arxiv"></i>
                     </span>
@@ -162,7 +131,7 @@
                 </span>
         
                 <span class="link-block">
-                  <a href="https://github.com/xlang-ai/OSWorld"
+                  <a href="https://github.com/HITsz-TMG/FilmAgent"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -171,7 +140,7 @@
                   </a>
                 </span>
                 <!-- Doc. -->
-                <span class="link-block">
+<!--                 <span class="link-block">
                   <a href="https://timothyxxx.github.io/OSWorld/"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -179,9 +148,9 @@
                     </span>
                     <span>Doc</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- Dataset Link. -->
-                <span class="link-block">
+<!--                 <span class="link-block">
                   <a href="https://github.com/xlang-ai/OSWorld/tree/main/evaluation_examples"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -189,29 +158,29 @@
                     </span>
                     <span>Data</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- Data Viewer. -->
-                <span class="link-block">
+<!--                 <span class="link-block">
                   <a href="explorer.html" target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fa fa-desktop"></i>
                     </span>
                     <span>Data Viewer</span>
                   </a>
-                </span>
+                </span> -->
                 <!-- Slides Link. -->
                 <span class="link-block">
-                  <a href="https://docs.google.com/presentation/d/1-r889Nb9n7SeZqrj-ryNqJLoMzp7aGNU2ihO8nUdEcE/edit?usp=sharing"
+                  <a href="https://filmagent.github.io/static/initial-zh.pdf"
                     target="_blank" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
-                      <i class="fab fa-google"></i>
+                      <i class="far fa-images"></i>
                     </span>
                     <span>Slides</span>
                   </a>
                 </span>
                 <!-- Twitter Link. -->
                 <span class="link-block">
-                  <a href="https://twitter.com/TianbaoX/status/1778781521253667267" target="_blank"
+                  <a href="https://x.com/imryanxu" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-twitter"></i>
@@ -220,7 +189,7 @@
                   </a>
                 </span>
                 <!-- Discord Link. -->
-                <span class="link-block">
+<!--                 <span class="link-block">
                   <a href="https://discord.gg/4Gnw7eTEZR" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
@@ -228,7 +197,7 @@
                     </span>
                     <span>Discord</span>
                   </a>
-                </span>
+                </span> -->
 
               </div>
             </div>
@@ -259,12 +228,14 @@
             <md-block>
               Virtual film production requires intricate decision-making processes, including scriptwriting, virtual cinematography, and precise actor positioning and actions. 
   Remarkable progress in automated decision-making have utilized agent societies powered by large language models (LLMs). 
-  This paper introduces FilmAgent, a novel LLM-based multi-agent collaborative framework designed to automate and streamline the film production process. 
+              
+  This paper introduces <strong>FilmAgent</strong>, a novel LLM-based multi-agent collaborative framework designed to automate and streamline the film production process. 
   FilmAgent simulates key crew roles—directors, screenwriters, actors, and cinematographers, and integrates efficient human workflows within a sandbox environment. 
   The process is divided into three stages: planning, scriptwriting, and cinematography.
   Each stage engages a team of film crews providing iterative feedback, thus verifying intermediate results and reducing errors.
+              
   Our evaluation of generated videos shows that the collaborative FilmAgent significantly outperforms individual efforts in line consistency, script coherence, character actions, and camera settings. 
-  Further analysis highlights the importance of feedback and verification in reducing hallucinations, enhancing script quality, and improving camera choices. 
+  Further analysis highlights the importance of <strong>feedback and verification</strong> in reducing hallucinations, enhancing script quality, and improving camera choices. 
   We also explore the strengths and limitations of FilmAgent and suggest directions for future research on integrating LLMs into creative multimedia tasks.
             </md-block>
           </div>
@@ -479,7 +450,35 @@
   </section>
 
 
-
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://filmagent.github.io/static/FilmAgent_arxiv_version_0830_v1.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/HITsz-TMG/FilmAgent" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            The source code is adapted from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a> and  <a
+              href="https://github.com/OS-World/OS-World.github.io">OS-World</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
   
 
 </body>
