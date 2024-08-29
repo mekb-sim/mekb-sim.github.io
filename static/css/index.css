@@ -217,6 +217,7 @@ body {
   position: relative;
   white-space: nowrap;
   overflow: hidden;
+  min-height: 250px;
   width: 100%;
   margin-bottom: 2rem; /* Add some margin to avoid overlap */
 }
