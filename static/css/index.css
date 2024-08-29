@@ -106,7 +106,7 @@ body {
 .publication-video {
   position: relative;
   width: 90%;
-  height: 90%;
+  min-height: 180px;
   padding-bottom: 30%;
 
   overflow: hidden;
