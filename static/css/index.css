@@ -217,13 +217,14 @@ body {
   position: relative;
   white-space: nowrap;
   overflow: hidden;
-  min-height: 250px;
+  height: 250px;
   width: 100%;
   margin-bottom: 2rem; /* Add some margin to avoid overlap */
 }
 
 .carousel-track-videos {
   display: flex;
+  height: 250px;
   gap: 1rem;
   animation: scroll-videos 15s linear infinite; /* Slower animation */
 }
@@ -231,6 +232,7 @@ body {
 .carousel-item-videos {
   display: inline-block;
   flex: 0 0 auto;
+  height: 250px;
   width: 400px;
 }
 
